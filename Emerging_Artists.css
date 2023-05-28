@@ -1,0 +1,232 @@
+/*Universal selector*/
+* {
+    box-sizing: border-box;
+    font-family: arial;
+    }
+    
+    /*Element selector*/
+    header, section, aside, footer, nav li {
+    padding: 1%;
+    }
+    
+    /*Classes*/
+    img{
+        width: 90%;
+        height: 90%;
+        border: 4px solid black;
+    }
+    .bold{
+        font-weight: bold;
+        font-size: 140%;
+    }
+
+
+
+    
+
+     /*Link properties*/
+    a {
+    color: white;
+    text-decoration: none;
+    }
+
+    a:hover {
+    text-decoration: underline;
+    }
+  
+    a[target="_blank"]::after {
+    content: " (enlace externo)";
+    }
+
+
+    /*First container css properties, Logo and list*/
+    .container{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: center;
+        color: black;
+        background-color: black;
+        padding-right: 2%;
+       }
+
+    .logo{
+        width: 30%;
+        height: 30%;
+        padding: 0%;
+        margin: 0%;
+        }
+
+
+    /*Second container css properties*/
+
+    .container_2{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        text-align: center;
+        align-items: center;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    
+
+    /*Third container css properties Footer*/
+    .container_3{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        text-align: center;
+        align-items: center;
+        padding:1%;
+        padding-bottom: 2%;
+    }
+
+    form{
+        font-size: 125%;
+    }
+    #form_text{
+        font-size: 125%;
+    }
+
+    /*Fourth container css properties Footer*/
+      .container_4{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        text-align: center;
+        align-items: center;
+        padding:1%;
+        padding-bottom: 2%;
+    }
+
+    
+    
+    /*Fifth container css properties Footer*/
+    .container_5 {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    }   
+           
+    footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    }
+
+    footer img{
+        width: 7%;
+        height: 7%;
+        margin: 1%;
+    }
+
+    ul{
+        list-style-type: none;
+        font-size: 90%;
+    }
+
+    /*Drop-down_menu*/
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        align-items: center;
+        }
+
+    .size_icon{
+        font-size: 25px;
+       }
+       .menu_drop>li>a{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        min-width: 50px;
+        text-align:center;
+       }
+       /*Nested list*/
+       .menu_drop>li>ul>li>a{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        min-width: 100px;
+        text-align:center;
+       }
+       /*List and nested list*/
+       .menu_drop li>a:hover{
+        color: black;
+        background-color: lightgrey;
+       }
+       /*By default the nested list is hidden*/
+       .menu_drop>li>ul{
+        display: none;
+        position: absolute; /*the dropdown is over the content*/
+        flex-direction: column;
+       }
+       /*When you (hovering) roll the cursor over the item, the drop-down-menu appears*/
+       .menu_drop>li:hover> ul {
+        display:flex;
+       }
+       .menu_pc {
+        display: none;
+         }
+         
+    /* Responsive desing*/
+    /* For mobile phones: */
+    [class*="col-"] {
+    width: 100%; 
+    
+    }
+
+    
+    /* For tablets: */
+    @media only screen and (min-width: 600px ) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .menu_movil {
+        display: none;
+         }
+         .menu_pc {
+        display: flex;
+         }
+        }
+    
+ 
+
+     /* For desktop: */
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    }
+
+

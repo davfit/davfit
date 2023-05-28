@@ -1,0 +1,330 @@
+/*Universal selector*/
+* {
+    box-sizing: border-box;
+    font-family: arial;
+    }
+    
+    /*Element selector*/
+    header, section, aside, footer, nav li {
+    padding: 1%;
+    }
+    
+    /*Classes*/
+    .bold{ font-weight: bold; }
+    .bold_2{  font-weight: bold; font-size: 150%;}
+    .padding{ padding-left: 2%; padding-right: 2%;}
+   
+
+
+    /*Bottom of the first two containers*/
+    .background{
+        background-image: url(fondo_virtual.jpg);
+        height: 90%;
+        width: 100%;
+    }
+
+     /*Link properties*/
+    a {
+    color: white;
+    text-decoration: none;
+    }
+
+    a:hover {
+    text-decoration: underline;
+    }
+  
+    a[target="_blank"]::after {
+    content: " (enlace externo)";
+    }
+
+    /*First container css properties, Logo and list*/
+    .container{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: center;
+        color: black;
+        background-color: transparent;
+        padding-right: 2%;
+       }
+
+    .logo{
+        width: 30%;
+        height: 30%;
+        padding: 0%;
+        margin: 0%;
+        }
+
+    
+
+    /*Second container css properties*/
+
+    .container_2{
+        display:flex;
+        flex-direction: row-reverse;
+        flex-wrap:wrap;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    h1{
+        color: white; font-size: 400%;
+        -webkit-text-stroke: 2px black;
+        font-weight: bold;
+        
+    }
+
+    /*Third container css properties*/
+
+    .container_3{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: center; 
+        padding-left: 1%;
+        padding-right: 1%;
+        
+    }
+
+    .Releases{
+        -webkit-text-stroke: 1px white;
+        color: black;
+        font-size: 200%;
+        text-align: left;
+        font-weight: bold;
+        padding-left: 2%;
+        padding-right: 1%;
+    
+    }
+
+    .last{
+        background-color: black;
+        text-align: center;
+        padding: 1%;
+        color: white;
+    }
+
+    img{
+        width: 85%;
+        height: 85%;
+    }
+    #disc img{
+        width: 85%;
+        height: 85%;
+    }
+
+   .container_3 img:hover{
+        transform: scale(1.1); /* aumenta el tamaño en 20% */
+      }
+
+
+
+   /*Fourth container css properties*/
+    .container_4{
+     display:flex; align-items: center;
+     flex-direction: row;
+     flex-wrap:wrap;
+     padding-left: 1%;
+     padding-right: 1%;
+     text-align: center;
+    }
+
+    .ill_pekeño{
+        width: 75%;
+        height: 75%;
+    }
+
+    .mda{
+        width: 75%;
+    height: 75%;
+    }
+    
+    .title_news{
+     text-align: center;
+     font-weight: bold;
+    }
+
+    
+
+
+    /*Sixth container css properties*/
+    .container_6 {
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1%;
+        padding-right: 2%;
+        padding-bottom: 1%;
+        text-align: center;
+        
+        }   
+
+    .hoke{
+        font-weight: bold;
+        font-size: 200%;
+    }
+
+    .hoke_img{
+        width: 60%;
+        height: 60%;
+        border: 3px dotted black;
+    }
+    /*Seventh container css properties, Footer*/
+
+    .container_7{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        text-align: center;
+
+    }
+
+    .responsive-iframe {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Establece la proporción del iframe (16:9 en este caso) */
+      }
+      
+      .responsive-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+    /*Eighth container css properties, Footer*/
+    .container_8 {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    }        
+
+    footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    }
+
+    footer img{
+        width: 7%;
+        height: 7%;
+        margin: 1%;
+    }
+
+    
+
+
+    /*Drop-down_menu*/
+    nav ul {
+        list-style-type: none;
+        display:flex;
+        margin: 0%;
+        padding: 0%;
+        align-items: center;
+        }
+
+    .size_icon{
+        font-size: 25px;
+       }
+       .menu_drop>li>a{
+        background-color: transparent;
+        color: white;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        min-width: 50px;
+        text-align:center;
+
+       }
+
+       /*Nested list*/
+       .menu_drop>li>ul>li>a{
+        background-color: transparent;
+        color: white;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        min-width: 100px;
+
+       }
+       /*List and nested list*/
+       .menu_drop li>a:hover{
+        color: black;
+        background-color: lightgrey;
+       }
+       /*By default the nested list is hidden*/
+       .menu_drop>li>ul{
+        display: none;
+        position: absolute; /*the dropdown is over the content*/
+        flex-direction: column;
+     
+       }
+       /*When you (hovering) roll the cursor over the item, the drop-down-menu appears*/
+       .menu_drop>li:hover> ul {
+        display:flex;
+       }
+       .menu_pc {
+        display: none;
+         }
+
+        
+       
+
+
+       /* Responsive desing*/
+    /* For mobile phones: */
+    [class*="col-"] {
+    {width: 100%; }
+
+    }
+
+    
+    /* For tablets: */
+    @media only screen and (min-width: 600px ) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .menu_movil {
+        display: none;
+         }
+         .menu_pc {
+        display: flex;
+         }
+        }
+    
+     /* For desktop: */
+    @media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    }
+
+
+    justify-content: center;
