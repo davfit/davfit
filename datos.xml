@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RATINGS [
+    <!ELEMENT RATINGS (CD*)>
+    <!ELEMENT CD (ARTIST, ALBUM, NOTE)>
+    <!ELEMENT ARTIST (#PCDATA)>
+    <!ELEMENT ALBUM (#PCDATA)>
+    <!ELEMENT NOTE (#PCDATA)>
+
+    <!ATTLIST CD
+        id ID #IMPLIED
+    >
+]>
 
 
 <RATINGS>
@@ -15,6 +26,7 @@
 <CD>
 <ARTIST>MDA</ARTIST>
 <ALBUM>RS4</ALBUM>
+
 <NOTE>8,5</NOTE>
 </CD>
 <CD>
@@ -28,7 +40,7 @@
 <NOTE>8,5</NOTE>
 </CD>
 <CD>
-<ARTISTS>María Escarmiento</ARTIST>
+<ARTIST>María Escarmiento</ARTIST>
 <ALBUM>Witch things</ALBUM>
 <NOTE>8</NOTE>
 </CD>
