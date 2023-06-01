@@ -96,13 +96,13 @@
 
     }
 
-    table{
+    #demo{
         border-collapse: collapse;
-        background-color: #DCD9D9;
+        background-color: white;
         text-align: center;
     }
 
-    td{
+    #demo.td{
         border: 2px solid black;
         padding: 1%;
     }
