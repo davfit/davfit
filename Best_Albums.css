@@ -97,27 +97,18 @@
     }
 
     #demo{
-        border-collapse: collapse;
         background-color: white;
         text-align: center;
+        font-size: 150%
+        
     }
 
-    #demo.td{
+    #demo td{
         border: 2px solid black;
         padding: 1%;
     }
 
-    #t_table{
-        font-weight: bold;
-        font-size: 200%;
-        color: red;
-    }
-
-    #tt_table{
-        font-weight: bold;
-        font-size: 135%;
-    
-    }
+  
 
    /*Fourth container css properties*/
     .container_5 {
